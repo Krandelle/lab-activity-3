@@ -1,0 +1,126 @@
+/* src/App.css */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 2; /* Books section takes more space */
+  min-width: 300px;
+}
+
+.management-sections {
+  flex: 1; /* Management sections take less space */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.add-form input,
+.add-form select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.add-form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.add-form button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li strong {
+  font-size: 1.1em;
+}
+
+li small {
+  color: #777;
+  margin-left: 10px;
+}
+
+li div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 24px;
+  transition: background-color 0.2s;
+}
+.delete-btn:hover
